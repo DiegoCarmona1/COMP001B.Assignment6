@@ -20,6 +20,14 @@ a:focus, a:hover {
 body {
 	font-family: 'Noto Serif', serif;
 	font-size: 18px;
+	display: grid;
+	gap: 4px 5px;
+	grid-template-areas: 
+	'header''header''header''header'
+	'main''main''main''main'
+	'footer''footer''footer''footer';
+	
+
 }
 
 h1, h2 {
@@ -42,7 +50,7 @@ header {
 }
 
 main {
-
+	
 }
 
 p {
@@ -55,17 +63,21 @@ p {
 }
 
 #automotive, #maritime, #medical, #physics, #myths {
-
-}
-
-#footer-container {
+ 
 	
 }
 
-#header-container {
+#footer-container {
+	grid-area: footer;
+	border: 10px solid black;
+}
 
+#header-container {
+grid-area: header;
+border: 10px solid black;
 }
 
 #main-container {
-
+	grid-area: main;
+	border: 10px solid black;
 }
